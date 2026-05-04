@@ -46,4 +46,7 @@ nav{
 }
 
 
-
+.nav-links .bag-icon {
+  margin-right: -30px;
+  align-items: center;
+}
