@@ -25,3 +25,7 @@
     width: 100%;
     display: block;
 }
+
+.product-header {
+    color: var(--orange);
+}

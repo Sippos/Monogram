@@ -4,6 +4,11 @@
     --blue: rgb(37, 99, 235);
     --purple: rgb(147, 51, 234);
     --green: rgb(16, 185, 129);
+    --darkblue: #1a2456;
+    --orange: #ff8b68;
+    --offwhite: #f0efed;
+    --navyblue: #080b1b;
+
 
     --gradient-primary: linear-gradient(135deg, var(--blue), var(--purple));
     --gradient-secondary: linear-gradient(135deg, var(--blue), var(--green));
