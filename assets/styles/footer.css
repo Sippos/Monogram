@@ -3,7 +3,7 @@ footer{
     justify-content: center;
     gap: var(--space-5xl);
     padding: var(--space-3xl);
-    padding-bottom: var(--space-3xl) ;
+    padding-bottom: var(--space-5xl) ;
     background-color: var(--darkblue);
     color: var(--lightpink);
     font-size: var(--fs-md);
@@ -22,8 +22,9 @@ footer a:hover{
 }
 
 footer h2{
+    font-size: var(--fs-md);
     padding-bottom: var(--space-sm);
-
+    text-transform: uppercase;
 }
 
 
@@ -63,10 +64,37 @@ footer h2{
 
 .icons{
     display: flex;
+    /* margin: var(--space-lg); */
     gap: var(--space-xs)
 }
 
 .footer-form{
     display: flex;
+    margin: var(--space-xl) var(--space-2xl) var(--space-lg) 0;
+    gap: var(--space-xl);
 
+}
+
+footer input{
+    background-color: transparent;
+    border: 1px solid #f7cabd;
+    padding: var(--space-sm);
+}
+
+
+footer button{
+    background-color: var(--lightpink);
+    color: var(--navyblue);
+    text-transform: uppercase;
+    font-size: var(--fs-xs);
+    font-weight: bold;
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm) var(--space-2xl);
+    border: none;
+}
+
+
+footer button:hover{
+    background-color: var(--orange);
+    cursor: pointer;
 }
