@@ -8,6 +8,7 @@
     --orange: #ff8b68;
     --offwhite: #f0efed;
     --navyblue: #080b1b;
+    --lightpink: #f7cabd;
 
 
     --gradient-primary: linear-gradient(135deg, var(--blue), var(--purple));
@@ -33,6 +34,8 @@
     --space-xl: 1.25rem;
     --space-2xl: 1.5rem;
     --space-3xl: 2rem;
+    --space-4xl: 4rem;
+    --space-5xl: 6rem;
 
     --radius-sm: 0.25rem;
     --radius-md: 0.5rem;
