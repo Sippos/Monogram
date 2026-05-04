@@ -1,5 +1,5 @@
 .product-gallery {
-    padding: 60px 40px;
+    padding: 25px 40px;
     background-color: var(--offwhite);
 }
 
@@ -82,4 +82,44 @@
     font-size: 13.5px;
     font-weight: 300;
     line-height: 20.25px;
+}
+
+.shop-banner {
+    position: relative;
+    background-color: var(--offwhite);
+    padding: 10px 40px 0;
+}
+
+.shop-banner img {
+    display: block;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--darkblue);
+    text-align: center;
+}
+
+.banner-text h2 {
+    margin: 0 0 10px;
+    font-family: prompt, sans-serif;
+    font-size: 37.5px;
+    font-weight: 600;
+    line-height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.banner-text p {
+    margin: 0;
+    font-family: prompt, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
 }
