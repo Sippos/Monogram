@@ -1,0 +1,33 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --blue: rgb(37, 99, 235);
+    --purple: rgb(147, 51, 234);
+    --green: rgb(16, 185, 129);
+
+    --gradient-primary: linear-gradient(135deg, var(--blue), var(--purple));
+    --gradient-secondary: linear-gradient(135deg, var(--blue), var(--green));
+
+    --color-text-primary: rgb(30, 41, 59);
+    --color-text-secondary: rgb(51, 65, 85);
+
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 1.75rem;
+    --fs-3xl: 2rem;
+
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 0.75rem;
+    --space-lg: 1rem;
+    --space-xl: 1.25rem;
+    --space-2xl: 1.5rem;
+    --space-3xl: 2rem;
+
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+}
