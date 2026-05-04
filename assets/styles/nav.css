@@ -11,6 +11,8 @@ nav{
     gap: var(--space-md);
     background-color: var(--darkblue);
     color: var(--lightpink);
+    text-transform: uppercase;
+    font-size: var(--fs-sm);
 
 }
 
@@ -25,7 +27,7 @@ nav{
 .nav-links{
     display: flex;
     padding: var(--space-lg);
-    gap: var(--space-md);
+    gap: var(--space-3xl);
 
 }
 
