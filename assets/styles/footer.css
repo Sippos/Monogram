@@ -1,0 +1,100 @@
+footer{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-5xl);
+    padding: var(--space-3xl);
+    padding-bottom: var(--space-5xl) ;
+    background-color: var(--darkblue);
+    color: var(--lightpink);
+    font-size: var(--fs-md);
+}
+
+footer a{
+    text-decoration: none;
+    padding: var(--space-xs);
+    color: var(--lightpink);
+}
+
+footer a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+    
+}
+
+footer h2{
+    font-size: var(--fs-md);
+    padding-bottom: var(--space-sm);
+    text-transform: uppercase;
+}
+
+
+
+.address li{
+    list-style: none;
+
+}
+
+
+.quicklinks{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.help{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.information{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.icons{
+    display: flex;
+    /* margin: var(--space-lg); */
+    gap: var(--space-xs)
+}
+
+.footer-form{
+    display: flex;
+    margin: var(--space-xl) var(--space-2xl) var(--space-lg) 0;
+    gap: var(--space-xl);
+
+}
+
+footer input{
+    background-color: transparent;
+    border: 1px solid #f7cabd;
+    padding: var(--space-sm);
+}
+
+
+footer button{
+    background-color: var(--lightpink);
+    color: var(--navyblue);
+    text-transform: uppercase;
+    font-size: var(--fs-xs);
+    font-weight: bold;
+    border-radius: var(--radius-lg);
+    padding: var(--space-sm) var(--space-2xl);
+    border: none;
+}
+
+
+footer button:hover{
+    background-color: var(--orange);
+    cursor: pointer;
+}
