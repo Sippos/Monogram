@@ -1,12 +1,17 @@
 nav{
+    position: fixed;
+    top: var(--space-md);
+    left: var(--space-md);
+    right: var(--space-md);
+    z-index: 1;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: var(--space-md);
-    /* background-color: var(--blue); */
-    background-color: #1a2456;
-    /* color: var(--purple); */
-    color: #f7cabd;
+    background-color: var(--darkblue);
+    color: var(--lightpink);
+
 }
 
 .nav-title{
@@ -14,9 +19,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: var(--space-md);
-    /* background-color: var(--blue); */
-    /* background-color: #1a2456; */
-
+    padding-left: var(--space-sm);
 }
 
 .nav-links{
@@ -27,17 +30,16 @@ nav{
 }
 
 .nav-links a {
-    /* color: var(--purple); */
-    color: #f7cabd;
+    color: var(--lightpink);
     text-decoration: none;
 }
 
 .nav-links a:hover{
-    color: #ff8b68;
+    color: var(--orange);
 }
 
 .nav-title :hover{
-    color: #ff8b68;
+    color: var(--orange);
    
 }
 
