@@ -1,2 +1,48 @@
 @import url(variables.css);
 
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+    /* background-color: var(--blue); */
+    background-color: #1a2456;
+    /* color: var(--purple); */
+    color: #f7cabd;
+}
+
+.nav-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    /* background-color: var(--blue); */
+    /* background-color: #1a2456; */
+
+}
+
+.nav-links{
+    display: flex;
+    padding: var(--space-lg);
+    gap: var(--space-md);
+
+}
+
+.nav-links a {
+    /* color: var(--purple); */
+    color: #f7cabd;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #ff8b68;
+}
+
+.nav-title :hover{
+    color: #ff8b68;
+   
+}
+
+
+
