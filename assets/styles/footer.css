@@ -1,0 +1,72 @@
+footer{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-5xl);
+    padding: var(--space-3xl);
+    padding-bottom: var(--space-3xl) ;
+    background-color: var(--darkblue);
+    color: var(--lightpink);
+    font-size: var(--fs-md);
+}
+
+footer a{
+    text-decoration: none;
+    padding: var(--space-xs);
+    color: var(--lightpink);
+}
+
+footer a:hover{
+    color: var(--orange);
+    text-decoration: underline;
+    
+}
+
+footer h2{
+    padding-bottom: var(--space-sm);
+
+}
+
+
+
+.address li{
+    list-style: none;
+
+}
+
+
+.quicklinks{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.help{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.information{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.subscribe{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.icons{
+    display: flex;
+    gap: var(--space-xs)
+}
+
+.footer-form{
+    display: flex;
+
+}
