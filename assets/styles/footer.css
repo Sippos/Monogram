@@ -1,5 +1,6 @@
 footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: var(--space-5xl);
     padding: var(--space-3xl);
@@ -10,8 +11,9 @@ footer{
 }
 
 footer a{
+    display: block;
     text-decoration: none;
-    padding: var(--space-xs);
+    padding: var(--space-xs) 0;
     color: var(--lightpink);
 }
 
@@ -27,7 +29,9 @@ footer h2{
     text-transform: uppercase;
 }
 
-
+footer section{
+    min-width: 250px;
+}
 
 .address li{
     list-style: none;
@@ -64,13 +68,13 @@ footer h2{
 
 .icons{
     display: flex;
-    /* margin: var(--space-lg); */
-    gap: var(--space-xs)
+    gap: var(--space-xs);
+    flex-wrap: wrap;
 }
 
 .footer-form{
     display: flex;
-    margin: var(--space-xl) var(--space-2xl) var(--space-lg) 0;
+    margin: var(--space-xl) 0 var(--space-lg) 0;
     gap: var(--space-xl);
 
 }
@@ -79,6 +83,7 @@ footer input{
     background-color: transparent;
     border: 1px solid #f7cabd;
     padding: var(--space-sm);
+    width: 100%;
 }
 
 
@@ -91,10 +96,47 @@ footer button{
     border-radius: var(--radius-lg);
     padding: var(--space-sm) var(--space-2xl);
     border: none;
+    cursor: pointer;
 }
 
 
 footer button:hover{
     background-color: var(--orange);
-    cursor: pointer;
+}
+
+@media (max-width: 1024px)
+{
+    footer{
+        justify-content: space-between;
+        gap: var(--space-3xl);
+    }
+
+    .subscribe{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)
+{
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }    
+
+    .footer-form{
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    footer input{
+        width: 100%;
+    }
+
+    footer button{
+        width: 100%;
+    }
+
+    .icons{
+        flex-wrap: wrap;
+    }
 }
