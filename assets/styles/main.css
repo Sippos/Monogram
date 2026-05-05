@@ -24,6 +24,29 @@
     overflow: hidden;
 }
 
+.product-img-main,
+.product-img-hover {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.25s ease;
+}
+
+.product-img-hover {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.product-card:hover .product-img-main {
+    opacity: 0;
+}
+
+.product-card:hover .product-img-hover {
+    opacity: 1;
+}
+
 .product-image-wrapper img {
     width: 100%;
     aspect-ratio: 3/2;
@@ -86,25 +109,27 @@
 
 .shop-banner {
     position: relative;
-    background-color: var(--offwhite);
-    padding: 10px 40px 0;
+    height: 506px;
+    background-color: rgb(196, 196, 196);
+    overflow: hidden;
 }
 
 .shop-banner img {
-    display: block;
     width: 100%;
-    max-width: 1120px;
-    margin: 0 auto;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
 }
 
 .banner-text {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--darkblue);
+    top: 45px;
+    left: 0;
+    width: 100%;
     text-align: center;
+    color: var(--darkblue);
+    z-index: 2;
 }
 
 .banner-text h2 {
@@ -122,4 +147,75 @@
     font-family: prompt, sans-serif;
     font-size: 18px;
     font-weight: 300;
+}
+
+.module-gallery {
+    padding: 40px;
+    background-color: var(--offwhite);
+}
+
+.module-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1120px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 24px;
+}
+
+@media (max-width: 900px) {
+    .module-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .product-grid,
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-gallery,
+    .module-gallery {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .shop-banner {
+        height: 380px;
+    }
+
+    .banner-text {
+        top: 40px;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .shop-banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        top: 35px;
+        padding: 0 20px;
+    }
+
+    .banner-text h2 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .banner-text p {
+        font-size: 15px;
+    }
 }
