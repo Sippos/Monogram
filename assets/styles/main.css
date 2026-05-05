@@ -86,7 +86,6 @@
 
 .shop-banner {
     position: relative;
-    width: 100%;
     height: 506px;
     background-color: rgb(196, 196, 196);
     overflow: hidden;
@@ -125,4 +124,75 @@
     font-family: prompt, sans-serif;
     font-size: 18px;
     font-weight: 300;
+}
+
+.module-gallery {
+    padding: 40px;
+    background-color: var(--offwhite);
+}
+
+.module-grid {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1120px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 24px;
+}
+
+@media (max-width: 900px) {
+    .module-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .product-grid,
+    .module-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-gallery,
+    .module-gallery {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .shop-banner {
+        height: 380px;
+    }
+
+    .banner-text {
+        top: 40px;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+    .shop-banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        top: 35px;
+        padding: 0 20px;
+    }
+
+    .banner-text h2 {
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 2px;
+    }
+
+    .banner-text p {
+        font-size: 15px;
+    }
 }
