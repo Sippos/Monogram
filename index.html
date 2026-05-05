@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" href="./assets/images/logo.png" />
   <link rel="stylesheet" href="./assets/styles/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" />
 </head>
 
 <body>
@@ -36,18 +37,48 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="./assets/images/hero.jpg" alt="Monogram Hero Image" />
-      <div class="hero-content">
-        <h1>A Console for Every Workflow</h1>
-        <h3>Discover the perfect console for yours.</h3>
-      </div>
-      <a class="hero-downward" href="#product-gallery">
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </section>
-  </header>
+      <!-- Hero Section with Carousel  -->
+      <section id="heroCarousel" class="carousel slide hero" data-bs-ride="carousel" data-interv="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/hero.jpg" class="d-block w-100" alt="Monogram console workflow" />
+            <div class="carousel-caption">
+              <h1>A Console for Every Workflow</h1>
+              <h3>Discover the perfect console for yours.</h3>
+            </div>
+            <a class="hero-downward" href="#product-gallery">
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/hero1.jpg" alt="Monogram console modules" />
+            <div class="carousel-caption">
+              <h1>Create your own console</h1>
+              <h3>Add-on to make it perfect</h3>
+            </div>
+            <a class="hero-downward" href="#shop-banner">
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/hero2.jpg" alt="Monogram console for creatives" />
+            <div class="carousel-caption">
+              <h1>A Console for Every Workflow</h1>
+              <h3>Discover the perfect console for yours.</h3>
+            </div>
+            <a class="hero-downward" href="#product-gallery">
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </section>
+    </header>
 
   <!-- Main -->
   <main>
@@ -149,7 +180,7 @@
       </ul>
     </section>
 
-    <section class="shop-banner">
+    <section class="shop-banner" id="shop-banner">
       <img src="https://monogramcc.com/static/fb6b98aa90bbce383e12a09c50936e96/3d304/shop-banner-module.jpg"
         alt="Monogram modules displayed on white blocks" />
 
@@ -423,6 +454,7 @@
       <p>© Monogram 2023</p>
     </section>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"></script>
 </body>
 
 </html>
