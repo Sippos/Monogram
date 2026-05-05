@@ -16,13 +16,8 @@ header {
 }
 
 .hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  height: 100%;
   object-fit: cover;
+  height: 100%;
   -webkit-mask-image: radial-gradient(circle, transparent 0%, var(--black) 75%);
   mask-image: radial-gradient(circle, transparent 0%, var(--black) 75%);
   transition: all 0.3s ease;
@@ -87,24 +82,13 @@ header {
   color: transparent;
 }
 
-
-
 @media (max-width: 1199px) {
-  .hero {
-    height: 85dvh;
-    min-height: 28rem;
-  }
-
   .hero-downward {
     bottom: var(--space-2xl);
   }
 }
 
 @media (max-width: 767px) {
-  .hero {
-    height: 75dvh;
-  }
-
   .carousel-caption {
     padding: 0 var(--space-sm);
   }
@@ -128,22 +112,17 @@ header {
   }
 }
 
-@media (max-width: 575px) {
-  .hero {
-    height: 68dvh;
-    min-height: 22rem;
-  }
-
+@media (max-width: 480px) {
   .carousel-caption h1 {
     font-size: var(--fs-xl) !important;
-    margin-top: var(--space-xl);
-    margin-bottom: var(--space-lg);
+    position: relative;
+    top: var(--space-2xl);
   }
 
   .carousel-caption h3 {
     font-size: var(--fs-md) !important;
-    margin-top: var(--space-lg);
-    margin-bottom: var(--space-md);
+    position: relative;
+    top: var(--space-2xl);
   }
 
   .hero-downward {
