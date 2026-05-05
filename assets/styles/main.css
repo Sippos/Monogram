@@ -24,6 +24,29 @@
     overflow: hidden;
 }
 
+.product-img-main,
+.product-img-hover {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.25s ease;
+}
+
+.product-img-hover {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.product-card:hover .product-img-main {
+    opacity: 0;
+}
+
+.product-card:hover .product-img-hover {
+    opacity: 1;
+}
+
 .product-image-wrapper img {
     width: 100%;
     aspect-ratio: 3/2;
